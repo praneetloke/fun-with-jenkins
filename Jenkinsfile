@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Hello from :jenkins:') {
+        stage(':jenkins: Hello from the Jenkinsfile!') {
             steps {
-                echo 'Hi, world!'
+                echo 'Hi, world! :wave:'
             }
         }
     }
