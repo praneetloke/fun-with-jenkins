@@ -9,8 +9,6 @@ if (!username || !token || !jenkinsUrl) {
     process.exit(1);
 }
 
-console.log({ username, token, jenkinsUrl })
-
 async function convert(jenkinsfile) {
     const file = readFileSync(jenkinsfile, "utf8");
     const auth = Buffer.from(`${username}:${token}`).toString("base64");
