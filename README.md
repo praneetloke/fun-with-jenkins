@@ -47,7 +47,7 @@ $ npm -C .buildkite --silent run build
 
 Commits to the `main` branch run this program and extend the Buildkite pipeline at runtime accordingly:
 
-![A Buildkite pipeline generated from a Jenkinsfile](https://github.com/user-attachments/assets/758e44c0-e506-44d7-9afb-224efcfa5745)\
+![A Buildkite pipeline generated from a Jenkinsfile](https://github.com/user-attachments/assets/758e44c0-e506-44d7-9afb-224efcfa5745)
 
 :kite:
 
