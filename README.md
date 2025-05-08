@@ -1,6 +1,6 @@
 # fun-with-jenkins
 
-[![Build status](https://badge.buildkite.com/b11986402806b48d2cce49893def5d0e75ed8cb1ca5f147a47.svg)](https://buildkite.com/cnunciato/fun-with-jenkins)
+[![Build status](https://badge.buildkite.com/41540f18af5fa6a63abe00a854bfe22f7a1a0131210f7c08a4.svg)](https://buildkite.com/cnunciato/fun-with-jenkins)
 
 This is just me getting familiar with Jenkins.
 
