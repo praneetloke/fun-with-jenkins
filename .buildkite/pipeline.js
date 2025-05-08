@@ -2,11 +2,14 @@ import { readFileSync } from "fs";
 
 const username = process.env.JENKINS_USERNAME;
 const token = process.env.JENKINS_TOKEN;
+const jenkinsUrl = process.env.JENKINS_URL;
 
-if (!username || !token) {
-    console.error("")
+if (!username || !token || !jenkinsUrl) {
+    console.error("Missing username, token, or Jenkins URL.")
     process.exit(1);
 }
+
+console.log({ username, token, jenkinsUrl })
 
 async function convert(jenkinsfile) {
     const file = readFileSync(jenkinsfile, "utf8");
@@ -15,7 +18,7 @@ async function convert(jenkinsfile) {
     const form = new FormData();
     form.append("jenkinsfile", file);
 
-    const response = await fetch("http://localhost:8080/pipeline-model-converter/toJson", {
+    const response = await fetch(`${jenkinsUrl}/pipeline-model-converter/toJson`, {
         method: "POST",
         body: form,
         headers: {
