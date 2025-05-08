@@ -43,6 +43,7 @@ $ npm -C .buildkite --silent run build
         }
     ]
 }
+```
 
 Commits to the `main` branch run this program and extend the Buildkite pipeline at runtime accordingly:
 
