@@ -8,18 +8,18 @@ services:
       - ./jenkins.yaml:/var/jenkins_home/jenkins.yaml
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_home/jenkins.yaml
-  agent1:
-    image: jenkins/inbound-agent
-    environment:
-      - JENKINS_URL=http://jenkins:8080
-      - JENKINS_AGENT_WORKDIR=/home/jenkins/agent
-  agent2:
-    image: jenkins/inbound-agent
-    environment:
-      - JENKINS_URL=http://jenkins:8080
-      - JENKINS_AGENT_WORKDIR=/home/jenkins/agent
-  agent3:
-    image: jenkins/inbound-agent
-    environment:
-      - JENKINS_URL=http://jenkins:8080
-      - JENKINS_AGENT_WORKDIR=/home/jenkins/agent
+  # agent1:
+  #   image: jenkins/inbound-agent
+  #   environment:
+  #     - JENKINS_URL=http://jenkins:8080
+  #     - JENKINS_AGENT_WORKDIR=/home/jenkins/agent
+  # agent2:
+  #   image: jenkins/inbound-agent
+  #   environment:
+  #     - JENKINS_URL=http://jenkins:8080
+  #     - JENKINS_AGENT_WORKDIR=/home/jenkins/agent
+  # agent3:
+  #   image: jenkins/inbound-agent
+  #   environment:
+  #     - JENKINS_URL=http://jenkins:8080
+  #     - JENKINS_AGENT_WORKDIR=/home/jenkins/agent

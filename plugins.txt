@@ -1,1 +1,2 @@
 configuration-as-code:latest
+build-name-setter:2.5.0
